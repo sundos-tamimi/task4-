@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 4 - Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-columns: 1fr;
+            height: 100vh;
+        }
+
+        header ,footer
+        {
+            background-color: #f98b72;
+            padding: 20px;
+            text-align: left;
+            border: 9px solid white;
+        }
+
+        nav {
+            background-color: #f98b72;
+            padding: 10px;
+            text-align: right;
+            margin: 0 10px;
+            color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        .article-aside {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        article {
+            background-color: #6ac5e8;
+            padding: 20px;
+        }
+
+        aside {
+            background-color: #cccccc;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #9ad1e8;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+         
+    </style>
+</head>
+<body>
+
+    <header>
+        Header
+    </header>
+
+    <nav>
+        <div class=" nav">
+            <input type="button" value=" ">
+            <input type="button" value=" ">
+            <input type="button" value=" ">
+            
+         </div>    
+    </nav>
+
+    <div class="article-aside">
+        <article>
+            <h2> article </h2>
+            <section>
+                <h2>  </h2>
+                <p> </p>
+            </section>
+            <section>
+                <h2> </h2>
+                <p> </p>
+            </section>
+            <section>
+                <h2> </h2>
+                <p> </p>
+            </section>
+        </article>
+
+        <aside>
+            <h2> aside </h2>
+            <section>
+                <h2> </h2>
+                <p> </p>
+            </section>
+            <section>
+                <h2> </h2>
+                <p> </p>
+            </section>
+        </aside>
+    </div>
+
+    <footer>
+        Footer
+    </footer>
+
+</body>
+</html>
